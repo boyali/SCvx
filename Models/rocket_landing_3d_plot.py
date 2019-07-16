@@ -66,7 +66,7 @@ def my_plot(fig, figures_i):
 
     ax.set_title("Iteration " + str(figures_i))
     ax.plot(X_i[1, :], X_i[2, :], X_i[3, :], color='lightgrey')
-    ax.set_aspect('equal')
+    # ax.set_aspect('equal')
 
 def plot(X_in, U_in, sigma_in):
     global figures_N
@@ -80,7 +80,7 @@ def plot(X_in, U_in, sigma_in):
     fig = plt.figure(figsize=(10, 12))
     my_plot(fig, figures_i)
     cid = fig.canvas.mpl_connect('key_press_event', key_press_event)
-    plt.show()
+    # plt.show()
 
 
 if __name__ == "__main__":

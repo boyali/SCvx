@@ -42,6 +42,7 @@ problem = SCProblem(m, K)
 
 last_nonlinear_cost = None
 converged = False
+
 for it in range(iterations):
     t0_it = time()
     print('-' * 50)
