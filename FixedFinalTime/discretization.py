@@ -20,6 +20,7 @@ class FirstOrderHold:
         B_bar_end = m.n_x * (1 + m.n_x + m.n_u)
         C_bar_end = m.n_x * (1 + m.n_x + m.n_u + m.n_u)
         z_bar_end = m.n_x * (1 + m.n_x + m.n_u + m.n_u + 1)
+
         self.x_ind = slice(0, x_end)
         self.A_bar_ind = slice(x_end, A_bar_end)
         self.B_bar_ind = slice(A_bar_end, B_bar_end)

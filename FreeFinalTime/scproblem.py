@@ -106,7 +106,7 @@ class SCProblem:
     def solve(self, **kwargs):
         error = False
         try:
-            self.prob.solve(**kwargs)
+            self.prob.solve(solver=cvx.ECOS)
         except cvx.SolverError:
             error = True
 

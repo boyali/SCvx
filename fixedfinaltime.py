@@ -6,10 +6,10 @@ from FixedFinalTime.discretization import FirstOrderHold
 from FixedFinalTime.scproblem import SCProblem
 from utils import format_line, save_arrays
 
-# from Models.diffdrive_2d import Model
-# from Models.diffdrive_2d_plot import plot
-from Models.rocket_landing_3d import Model
-from Models.rocket_landing_3d_plot import plot
+from Models.diffdrive_2d import Model
+from Models.diffdrive_2d_plot import plot
+# from Models.rocket_landing_3d import Model
+# from Models.rocket_landing_3d_plot import plot
 
 """
 Python implementation of the Successive Convexification algorithm.

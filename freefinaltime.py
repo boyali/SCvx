@@ -6,10 +6,10 @@ from FreeFinalTime.discretization import FirstOrderHold
 from FreeFinalTime.scproblem import SCProblem
 from utils import format_line, save_arrays
 
-# from Models.diffdrive_2d import Model
-# from Models.diffdrive_2d_plot import plot
-from Models.rocket_landing_3d import Model
-from Models.rocket_landing_3d_plot import plot
+from Models.diffdrive_2d import Model
+from Models.diffdrive_2d_plot import plot
+# from Models.rocket_landing_3d import Model
+# from Models.rocket_landing_3d_plot import plot
 
 """
 Python implementation of the Successive Convexification algorithm.
@@ -58,7 +58,8 @@ for it in range(iterations):
                            weight_nu=w_nu, weight_sigma=w_sigma, tr_radius=tr_radius)
 
     while True:
-        error = problem.solve(verbose=verbose_solver, solver=solver, max_iters=200)
+        # error = problem.solve(verbose=verbose_solver, solver=solver, max_iters=200)
+        error = problem.solve(solver=solver, max_iters=200)
         print(format_line('Solver Error', error))
 
         # get solution
